@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div>span{
+            color: orange;
+        } 子元素选择器*/
+        div span{
+            color: orchid;
+        }/* 后代选择器 */
+        
+        /* 兄弟+
+           后边所有兄弟~ */
+    </style>
+</head>
+<body>
+    <pre>
+        /* div>span{
+            color: orange;
+        } 子元素选择器*/
+        div span{
+            color: orchid;
+        }/* 后代选择器 */
+       
+        /* 兄弟+
+           后边所有兄弟~ */
+    </pre>
+    <hr>
+    <!-- 父元素子元素,直接包含 -->
+    <!-- 祖先元素后代元素,直接或间接包含 -->
+    <!-- 兄弟元素，相同父元素 -->
+    <div>div
+        <p>
+            div中的p元素
+            <span>p元素中的span</span>
+        </p>
+        <span>div中的span</span>
+    </div>
+</body>
+</html>

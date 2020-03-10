@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yooabe</title>
+    <style>
+        body {
+            font-size: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>阶段性练习1</h2>
+    <h3>英雄联盟 （电子竞技类游戏)</h3>
+    <p><strong>《英雄联盟》</strong>（简称lol）是由美国<em>Riot Games</em>开发，中国大陆地区由腾讯游戏运营的网络游戏。</p>
+    <p><strong>《英雄联盟》</strong>除了即时战略、团队作战外，还拥有一百多位特色各异的英雄、丰富的地图及玩法、自动匹配的战网平台，包括天赋树、召唤师系统、符文等元素。[<ins> 1</ins>]</p>
+    <p>2016年1月，根据官方数据显示，LOL全球最高同时在线已突破<del>750</del>
+        900万，全球日活跃高达2700万，全球月活跃已达6700万，注册用户亿计，LOL已经成为当今世界最具人气和影响力的网络游戏之一。[<ins>2</ins>]</p>
+    <!-- 标题：h，h1-h6 -->
+    <!-- 段落：p，自动换行 -->
+    <!-- 粗体：b/strong，strong强调重要性  -->
+    <!-- 斜体：i/em，同时具有粗体斜体效果，em强调重要性 -->
+    <!-- 删除：del -->
+    <!-- 下划线：ins/u，推荐ins -->
+    <hr>
+
+    <h2>预格式</h2>
+    <pre>public class HelloWorld {
+
+        public static void main(String[] args) {
+            System.out.println("Hello World");
+        }
+    }</pre>
+    <hr>
+
+    <h2>阶段性练习2</h2>
+    <h3>英雄技能</h3>
+    <table border="1" width="700px" height="500px">
+        <tr bgcolor="gray">
+            <td width="12%" align="center"><strong>技能名</strong> </td>
+            <td width="6%" align="center"><strong>触发</strong> </td>
+            <td align="center"><strong>技能属性</strong></td>
+            <td align="center"><strong>技能效果</strong></td>
+            <td align="center">图标</td>
+        </tr>
+        <tr>
+            <td align="center"><strong>坚韧</strong></td>
+            <td align="center"><strong>被动</strong></td>
+            <td colspan="2" align="center">盖伦如果在9秒内不受到任何伤害，之后的每秒都会回复自己最大生命值的0.4%。小兵的伤害不会中断坚韧熊效果。</td>
+            <td><img src="image/阶段2/skill1.png" alt="lol"> </td>
+        </tr>
+        <tr>
+            <td align="center"><strong>致命打击</strong></td>
+            <td align="center"><strong>Q</strong></td>
+            <td>冷却时间：8</td>
+            <td>盖伦移除身上的所有减速效果，并获取30%移动速度加成，持续1.5/2/2.5/3/3.5秒。在接下来的4.5秒内，他的下次普通攻击会造成30/55/80/105/130（+1.4AD）物理伤害，并沉默目标1.5秒。
+            </td>
+            <td><img src="image/阶段2/skill2.png" alt="lol"> </td>
+        </tr>
+        <tr>
+            <td align="center"><strong>勇气</strong></td>
+            <td align="center"><strong>W</strong></td>
+            <td>冷却：24/23/22/21/20</td>
+            <td>被动：击杀一个单位会永久提供0.25护甲和魔性抗性加成，最大值：30>主动：盖伦获得一个持续2/3/4/5/6秒的防御护盾，减少即将到来的30%的伤害。</td>
+            <td><img src="image/阶段2/skill3.png" alt="lol"> </td>
+        </tr>
+        <tr>
+            <td align="center"><strong>审判</strong></td>
+            <td align="center"><strong>E</strong></td>
+            <td>冷却：9</td>
+            <td>盖伦快速地旋舞大剑，持续3秒，在持续期间对周围敌人总共造成物理伤害——14/18/22/26/30加上他总攻击力的34/35/36/37/38%，5次（英雄每升3级加1次）。<br />E【审判】会在攻击单个敌人时造成33%额外伤害。<br />取消
+                E【审判】会返还相当于剩余持续时长的冷却时间。E【审判】可以暴击，并造成额外伤害。</td>
+            <td><img src="image/阶段2/skill4.png" alt="lol"> </td>
+        </tr>
+        <tr>
+            <td align="center"><strong>德玛西亚正义</strong></td>
+            <td align="center"><strong>R</strong></td>
+            <td>冷却：120/100/80</td>
+            <td>被动：最近获得最多击杀数的敌人会成为大反派。盖伦的E【审判】和普攻会对大反派造成额外的真实伤害，伤害值为大反派1%的最大生命值。主动：盖伦召唤德玛西亚之力，试图斩杀一名敌方英雄，目标损失的生命越多，则此技能造成的伤害越高。造成175/350/525魔法伤害加上目标已损失生命值28/33/40%。对大反派造成真实伤害。
+            </td>
+            <td><img src="image/阶段2/skill5.png" alt="lol"> </td>
+        </tr>
+    </table>
+    <!--    图像： 上级使用../ 
+                绝对路径使用file://   -->
+    <!--    表格： tr(table row)代表行，td(table data)代表列
+                border：边框
+                width：宽度
+                height：高度
+                align：水平对齐
+                valign：垂直对齐
+                colspan：跨列合并
+                rowspan：跨行合并
+                bgcolor：背景色 -->
+    <hr>
+
+    <h2>超链</h2>
+    <a href="how2j.cn" target="_blank" title="from 20200224">how2j</a>
+    <a href="how2j.cn"><img width="70" src="https://how2j.cn/example.gif" alt="daydayup"> </a>
+    <!--    target="_blank"新标签打开
+            title 提示文字
+            alt 丢失图片替换文字-->
+    <hr>
+
+    <h2>列表</h2>
+    无序列表：
+    <ul>
+        <li>up</li>
+        <li>up</li>
+    </ul>
+    有序列表：
+    <ol>
+        <li>up</li>
+        <li>up</li>
+    </ol>
+    <hr>
+
+    <h2>块 div span</h2>
+    <img width="70" style="margin-left: 50px;" src="https://how2j.cn/example.gif" alt=""><br>
+    <img width="70" style="margin-left: 50px;" src="https://how2j.cn/example.gif" alt="">
+    <div style="margin-left: 100px;">
+        <img width="70" src="https://how2j.cn/example.gif" alt=""><br>
+        <img width="70" src="https://how2j.cn/example.gif" alt="">
+    </div>
+    <!-- div：块元素
+         span：内联元素 -->
+    <hr>
+
+    <h2>字体</h2>
+    <font color="green">绿色默认大小字体</font><br>
+    <font color="blue" size="+2">蓝色大2号字体</font><br>
+    <font color="red" size="-2">红色小2号字体</font>
+    <!-- 似乎html5废弃了，后面用css -->
+    <hr>
+
+    <h2>内联框架</h2>
+    <iframe src="https://how2j.cn/" frameborder="1" width="300px" height="200px"></iframe>
+    <hr>
+
+    <h2>阶段性练习3</h2>
+    <table>
+        <tr>
+            <td align="right">
+                <font color="red">*</font>用户名：
+            </td>
+            <td><input type="text" value="yooabe"></td>
+            <td align="left">
+                <font color="red">用户名不得小于3个字符</font>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <font color="red">*</font>密码：
+            </td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td align="right">
+                <font color="red">*</font>确认密码：
+            </td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td align="right">
+                <font color="red">*</font>Email：
+            </td>
+            <td><input type="text" placeholder="请输入邮箱"></td>
+        </tr>
+        <tr>
+            <td align="right">
+                <font color="red">*</font>真实姓名：
+            </td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td align="right">
+                <font color="red">*</font>性别：
+            </td>
+            <td><select>
+                    <option>男</option>
+                    <option>女</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td align="right">生日：</td>
+            <td>
+                <select>
+                    <option>1997</option>
+                </select>
+                <select>
+                    <option>5</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <font color="red">*</font>手机：
+            </td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td align="right">地址：</td>
+            <td>
+                <select>
+                    <option>广东省</option>
+                </select>
+                <select>
+                    <option>揭阳市</option>
+                </select>
+                <select>
+                    <option>榕城区</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">QQ：</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <font color="blue">设置我的QQ在线状态</font>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+    <hr>
+
+    <p><strong>文本框：</strong></p>
+    <input type="text" size="20" value="有初始值的文本框" placeholder="请输入账号"><br>
+    <!-- placeholder是一个html5的属性 -->
+
+    <p><strong>密码框：</strong></p>
+    <input type="password"><br>
+
+    <p><strong>表单：</strong></p>
+    <form action="#" method="post">
+        账号：<input type="text" name="name" id=""><br>
+        密码：<input type="password" name="password"><br>
+        <input type="submit" value="登录">
+    </form>
+    <!-- jsp章节展开学习
+        method默认get
+        区别：
+        get 地址栏输入或者超链访问，是get方式，提交数据会在浏览器显示，不可以提交二进制数据，比如上传文件
+        post 提交不会在浏览器显示，可以用于提交二进制数据，比如上传文件-->
+
+    <p><strong>单选框：</strong></p>
+    1<input type="radio" checked="checked" name="activity" value="1">
+    2<input type="radio" name="activity" value="2">
+    <!-- name即同个分组，只能选中一个单选框 -->
+
+    <p><strong>复选框：</strong></p>
+    1<input type="checkbox" value="1">
+    2<input type="checkbox" value="2" checked="checked">
+
+    <p><strong>下拉列表：</strong></p>
+    <select size="2" multiple="multiple" name="" id="">
+        <option selected="selected" value="">11111</option>
+        <option value="">22222</option>
+        <option value="">33333</option>
+    </select>
+
+    <p><strong>文本域：</strong></p>
+    <textarea name="" id="" cols="50" rows="4">11
+        22
+    </textarea>
+
+    <p><strong>普通按钮：</strong></p>
+    <input type="button" value="button无法提交">
+
+    <p><strong>提交按钮：</strong></p>
+    <form action="#">
+        账号：<input type="text"><br>
+        密码：<input type="password"><br>
+        <input type="submit" value="登录 submit提交">
+    </form>
+
+    <p><strong>重置按钮：</strong></p>
+    <form action="#">
+        <input type="text"><br>
+        <input type="reset" value="重置 reset">
+    </form>
+
+    <p><strong>图像提交：</strong></p>
+    <input type="image" src="https://how2j.cn/example.gif">
+    <!-- jsp相关 -->
+
+    <p><strong>按钮：</strong></p>
+    <button type="submit"><img src="https://how2j.cn/example.gif" /></button>
+    <!-- buttonIE浏览器下默认不具备提交功能
+         button标签比input type="button"功能更为丰富 -->
+
+    <p><strong>音频视播放：</strong></p>
+    <audio src="#" controls ></audio>
+    <video controls>
+        <source src="#"> 
+        <source src="#"> 
+    </video>
+    <!-- 或者source -->
+
+
+</body>
+
+</html>

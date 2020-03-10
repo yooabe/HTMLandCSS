@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 500px;
+            background-color: seagreen;
+            position: relative;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: absolute;
+
+
+            left: 0px;
+            right: 0px;
+
+            top: 0px;
+            bottom: 0px;
+
+            margin: auto;
+        }
+        /*  水平布局
+               left+margin-left+border-left+padding-left+width+....+right
+               - 9个值如果没有auto则自动调整right值以使等式成立
+            垂直方向也必须要满足
+               top+margin-top....+bottom
+        */
+    </style>
+</head>
+<body>
+    <pre>
+        .box1{
+            width: 500px;
+            height: 500px;
+            background-color: seagreen;
+            position: relative;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: absolute;
+
+
+            left: 0px;
+            right: 0px;
+
+            top: 0px;
+            bottom: 0px;
+
+            margin: auto;
+        }
+        /*  水平布局
+               left+margin-left+border-left+padding-left+width+....+right
+               - 9个值如果没有auto则自动调整right值以使等式成立
+            垂直方向也必须要满足
+               top+margin-top....+bottom
+        */
+    </pre>
+    <hr>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

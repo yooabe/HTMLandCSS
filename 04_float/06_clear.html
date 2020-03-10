@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            font-size: 50px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            float: left;
+        }
+        .box2{
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            float: right;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: olivedrab;
+
+            clear: both;
+
+            /* 受到box1浮动，box3位置上移
+               可以通过clear清除浮动元素所产生的影响
+               原理：自动设置一个上外边距以使其位置不受其他元素影响
+             */
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        div{
+            font-size: 50px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            float: left;
+        }
+        .box2{
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            float: right;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: olivedrab;
+
+            clear: both;
+
+            /* 受到box1浮动，box3位置上移
+               可以通过clear清除浮动元素所产生的影响
+               原理：自动设置一个上外边距以使其位置不受其他元素影响
+             */
+        }
+    </pre>
+    <hr>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>

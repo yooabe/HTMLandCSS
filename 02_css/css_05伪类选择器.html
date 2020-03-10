@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul>li:first-child{
+            color: orange;
+        }
+        ul>li:last-child{
+            color: red;
+        }
+        ul>li:nth-child(3){ /* 0表示0到正无穷 */
+            color: blue;
+        }
+        ul>li:nth-child(2n){ /* 2n=even
+                                2n+1=odd */
+            color: green;
+        }
+        /* 以上是根据所有子元素进行排序,不同类型使用:first-of-type...
+           还有否定伪类 ul>li:not(:first-child)*/
+    </style>
+</head>
+<body>
+    <pre>
+        ul>li:first-child{
+            color: orange;
+        }
+        ul>li:last-child{
+            color: red;
+        }
+        ul>li:nth-child(3){ /* 0表示0到正无穷 */
+            color: blue;
+        }
+        ul>li:nth-child(2n){ /* 2n=even
+                                2n+1=odd */
+            color: green;
+        }
+        /* 以上是根据所有子元素进行排序,不同类型使用:first-of-type...
+           还有否定伪类 ul>li:not(:first-child)*/
+    </pre>
+    <hr>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>

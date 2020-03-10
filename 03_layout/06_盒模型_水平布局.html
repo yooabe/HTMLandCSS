@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            width: 800px;
+            height: 200px;
+            border: 10px red solid;
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+            background-color: rosybrown;
+            margin: 0 auto;
+        }
+        /* 
+            1.等式成立：左外边距+左边框+左内边距+内容宽度+右内边距+右边框+右外边距=宽度
+            2.等式不成立，浏览器会自动调整
+            3.widch默认auto
+        */
+    </style>
+</head>
+<body>
+    <pre>
+        .outer{
+            width: 800px;
+            height: 200px;
+            border: 10px red solid;
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+            background-color: rosybrown;
+            margin: 0 auto;
+        }
+        /* 
+            1.等式成立：左外边距+左边框+左内边距+内容宽度+右内边距+右边框+右外边距=宽度
+            2.等式不成立，浏览器会自动调整
+            3.widch默认auto
+        */
+    </pre>
+    <hr>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            font-size: 50px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: olive;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            /*  固定定位也是绝对定位的一种，大部分特点相同
+                不同的是固定定位参考于浏览器视口进行定位
+             */
+             position: fixed;
+             right: 0;
+             top: 200px;
+        }
+        .box3{
+            width: 300px;
+            height: 300px; 
+            background-color: red;
+        }
+        .box4{
+            width: 300px;
+            height: 300px;
+            background-color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        div{
+            font-size: 50px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: olive;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            /*  固定定位也是绝对定位的一种，大部分特点相同
+                不同的是固定定位参考于浏览器视口进行定位
+             */
+             position: fixed;
+             right: 0;
+             top: 200px;
+        }
+        .box3{
+            width: 300px;
+            height: 300px; 
+            background-color: red;
+        }
+        .box4{
+            width: 300px;
+            height: 300px;
+            background-color: royalblue;
+        }
+    </pre>
+    <hr>
+    <div class="box1">1</div>
+    <div class="box4">4
+        <div class="box2">2</div>
+    </div>
+    <div class="box3">3</div>
+</body>
+</html>

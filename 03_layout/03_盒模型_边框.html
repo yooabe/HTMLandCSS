@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            
+            /* border-width: 5px 10px 15px 20px;
+            border-color: orange red black;
+            border-style: solid dotted dashed double; */
+            border: black 10px solid;
+            border-right: none;
+        }
+        /*  
+            1.当值少于四个的时候，有对称取对称，没有对称取逆时针
+            2.除了border-width，还可以用border-top-width...
+            3.boder默认none
+        */
+    </style>
+</head>
+<body>
+    <pre>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            
+            /* border-width: 5px 10px 15px 20px;
+            border-color: orange red black;
+            border-style: solid dotted dashed double; */
+            border: black 10px solid;
+            border-right: none;
+        }
+        /*  
+            1.当内边距值少于四个的时候，有对称取对称，没有对称取逆时针
+            2.除了border-width，还可以用border-top-width...
+            3.boder默认none
+        */
+    </pre>
+    <hr>
+    <div class="box1"></div>
+</body>
+</html>

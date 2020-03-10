@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            font-size: 50px;
+        }
+        p::first-line{
+            background-color: yellow;
+        }
+        p::selection{
+            background-color: grey;
+        }
+        div::before{
+            content: "abc";
+            color: red;
+        }
+        div::after{
+            content: "abc";
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+        p::first-letter{
+            font-size: 50px;
+        }
+        p::first-line{
+            background-color: yellow;
+        }
+        p::selection{
+            background-color: grey;
+        }
+        div::before{
+            content: "abc";
+            color: red;
+        }
+        div::after{
+            content: "abc";
+            color: green;
+        }
+    </pre>
+    <hr>
+    <div>Hello JavaScript</div>
+    <p>HTML 标签原本被设计为用于定义文档内容。通过使用这样的标签，HTML的初衷是表达“这是标题”、“这是段落”、“这是表格”之类的信息。同时文档布局由浏览器来完成，而不使用任何的格式化标签。由于两种主要的浏览器（Netscape 和 Internet Explorer）不断地将新的 HTML 标签和属性（比如字体标签和颜色属性）添加到 HTM规范中，创建文档内容清晰地独立于文档表现层的站点变得越来越困难。为了解决这个问题，万维网联盟（W3C），这个非营利的标准化联盟，肩负起了 HTML 标准化的使命，并在 HTML 4.0 之外创造出样式（Style）。</p>
+</body>
+
+</html>

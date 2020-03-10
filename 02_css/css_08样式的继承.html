@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 80%;
+        }
+        p{
+            color: red;
+        }
+        div{
+            color: green;
+        }
+        /* 并不是所有样式会被继承，例如背景，布局 */
+    </style>
+</head>
+<body>
+    <pre>
+        body{
+            font-size: 80%;
+        }
+        p{
+            color: red;
+        }
+        div{
+            color: green;
+        }
+        /* 并不是所有样式会被继承，例如背景，布局 */
+    </pre>
+    <hr>
+    <p>
+        一个p元素
+        <span>p元素内的span</span>
+    </p>
+    <span>p元素外的span</span>
+
+    <div>一个div 
+        <span>div中的span
+            <em>span中的em
+            </em>
+        </span>
+    </div>
+</body>
+</html>

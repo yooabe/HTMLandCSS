@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(221, 213, 107);
+
+            box-shadow:  10px 10px 10px rgba(0, 0, 0, .3);
+            /* 第三个值为模糊半径 */
+
+            /* outline: 10px red solid; */
+            /* outline设置轮廓线，不会影响可见框大小 */
+        }
+        .box1:hover{
+            outline: 5px red solid;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            border-top-left-radius: 100px 200px;
+            /* 值为半径大小，两个值x y */
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(221, 213, 107);
+
+            box-shadow:  10px 10px 10px rgba(0, 0, 0, .3);
+            /* 第三个值为模糊半径 */
+
+            /* outline: 10px red solid; */
+            /* outline设置轮廓线，不会影响可见框大小 */
+        }
+        .box1:hover{
+            outline: 5px red solid;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            border-top-left-radius: 100px 200px;
+            /* 值为半径大小，两个值x y */
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+
+            border-radius: 50%;
+        }
+    </pre>
+    <hr>
+    <div class="box1"></div><br>
+    <div class="box2"></div><br>
+    <div class="box3"></div>
+</body>
+</html>

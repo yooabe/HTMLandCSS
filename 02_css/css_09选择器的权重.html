@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: yellow;
+        }
+        .red{
+            color: red;
+        }
+        #box1{
+            color: orange;
+        }
+        /* 不同选择器，相同元素，设置相同样式不同值，样式冲突，由选择器权重（优先级）决定
+
+           内联样式>id选择器>类和为伪类选择器>元素选择器>继承选择器>统配选择器（*）>继承的样式
+           
+           1.选择器累加不会超过本身最大，类选择器再累加也不会超过id选择器
+           2.优先级计算相同时候，优先选择靠后的样式
+           3.!important超过内联样式，慎用
+           */
+    </style>
+</head>
+<body>
+    <pre>
+        div{
+            color: yellow;
+        }
+        .red{
+            color: red;
+        }
+        #box1{
+            color: orange;
+        }
+        /* 不同选择器，相同元素，设置相同样式不同值，样式冲突，由选择器权重（优先级）决定
+
+           内联样式>id选择器>类和为伪类选择器>元素选择器>继承选择器>统配选择器（*）>继承的样式
+           
+           1.选择器累加不会超过本身最大，类选择器再累加也不会超过id选择器
+           2.优先级计算相同时候，优先选择靠后的样式
+           3.!important超过内联样式，慎用
+           */
+    </pre>
+    <hr>
+    <div id="box1" class="red" style="color: blue;">一个div</div>
+</body>
+</html>

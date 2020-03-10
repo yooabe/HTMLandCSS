@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            font-size: 50px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: olive;
+            position: absolute;
+            /* z-index: 1; */
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: rgba(255, 0, 0, .3);
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            /* z-index: 2; */
+        }
+        .box3{
+            width: 200px;
+            height: 200px; 
+            background-color: yellow;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 3;
+            /* 祖先元素再高也不会盖住后代元素 */
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3
+        <div class="box4">4</div>
+    </div>
+
+
+</body>
+</html>

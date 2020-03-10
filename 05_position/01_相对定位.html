@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            font-size: 50px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: olive;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            position: relative;
+            /* position默认值static
+                - 相对定位会提升元素的层级
+                - 相对定位不会脱离文档流
+                - 相对定位不会改变元素性质
+             */
+            left: 200px;
+            bottom: 200px;
+        }
+        .box3{
+            width: 200px;
+            height: 200px; 
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        body{
+            font-size: 50px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: olive;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            position: relative;
+            /* position默认值static
+                - 相对定位会提升元素的层级
+                - 相对定位不会脱离文档流
+                - 相对定位不会改变元素性质
+             */
+            left: 200px;
+            bottom: 200px;
+        }
+        .box3{
+            width: 200px;
+            height: 200px; 
+            background-color: red;
+        }
+    </pre>
+    <hr>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>

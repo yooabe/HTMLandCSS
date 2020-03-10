@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1,.box2,.box3{
+            width: 100px;
+            height: 100px;
+            font-style: 50px;
+        }
+        .box1{
+            background-color: salmon;
+            margin-bottom: 50px;
+        }
+        .box2{
+            background-color: seagreen;
+            margin-top: 50px;
+        }
+
+        /* 相邻的垂直方向外边距会发生重叠
+              - 兄弟元素之间会取较大值（正值） */
+
+        .box3{
+            background-color: skyblue;
+        }
+        .box4{
+            width: 50px;
+            height: 50px;
+            background-color: springgreen;
+            margin-top: 50px;
+        }
+
+        /* 父子元素相邻外边距，子元素会传递给父元素 */
+    </style>
+</head>
+<body>
+    <pre>
+        .box1,.box2,.box3{
+            width: 100px;
+            height: 100px;
+            font-style: 50px;
+        }
+        .box1{
+            background-color: salmon;
+            margin-bottom: 50px;
+        }
+        .box2{
+            background-color: seagreen;
+            margin-top: 50px;
+        }
+
+        /* 相邻的垂直方向外边距会发生重叠
+              - 兄弟元素之间会取较大值（正值） */
+
+        .box3{
+            background-color: skyblue;
+        }
+        .box4{
+            width: 50px;
+            height: 50px;
+            background-color: springgreen;
+            margin-top: 50px;
+        }
+
+        /* 父子元素相邻外边距，子元素会传递给父元素 */
+    </pre>
+    <hr>
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+    <hr>
+
+    <div class="box3">
+        <div class="box4"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: olivedrab;
+
+            /* float: left; */
+            /* 1.元素设置浮动以后，水平布局等式不需要强制成立
+               2.元素设置浮动后，会脱离文档流，不再占用文档流位置
+               3.浮动元素默认不会从父元素中移出
+               4.浮动元素移动后不会超过前边其他移动元素
+             */
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            float: left ;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+
+            float: left ;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: olivedrab;
+
+            /* float: left; */
+            /* 1.元素设置浮动以后，水平布局等式不需要强制成立
+               2.元素设置浮动后，会脱离文档流，不再占用文档流位置
+               3.浮动元素默认不会从父元素中移出
+               4.浮动元素移动后不会超过前边其他移动元素
+             */
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            float: left ;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+
+            float: left ;
+        }
+    </pre>
+    <hr>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+        .box2{
+            width: 50%;
+            height: 50%;
+            background-color: red;
+        }
+        .box3{
+            font-size: 30px;
+            width: 10em;
+            height: 10em;
+            background-color: blue;
+        }
+        /* 1.相同像素在不同设备下显示效果不一样
+           2.百分比使得子元素跟随父元素
+           3.em相对字体大小计算，1em=1font-size
+           4.rem相对根元素字体大小计算*/
+    </style>
+</head>
+<body>
+    <pre>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+        .box2{
+            width: 50%;
+            height: 50%;
+            background-color: red;
+        }
+        /* 相同像素在不同设备下显示效果不一样
+           百分比使得子元素跟随父元素*/
+    </pre>
+    <hr>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+    <div class="box3"></div>
+</body>
+</html>

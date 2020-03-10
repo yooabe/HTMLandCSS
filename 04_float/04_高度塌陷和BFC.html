@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            border: 10px red solid;
+            
+            /* BFC(Block Formatting Context)块级格式化环境 
+                 - 成为一个独立的布局区域
+                 - 不会被浮动元素覆盖
+                 - 子元素父元素外边距不会重叠
+                 - 可以包含浮动的子元素
+                
+                通过特殊方式开启（间接）
+                 - 设置元素浮动
+                 - 元素设置为行内块元素
+                 - 元素overf设置为一个非visible的值（常用）
+            */
+            overflow: auto;
+        }
+        .inner{
+            width: 100px;
+            height: 100px;
+            background-color: royalblue;
+
+            float: left;
+            /* 高度塌陷
+                 - 当子元素浮动后，完全脱离文档流，将无法撑起父元素高度，导致父元素高度缺失
+                 - 父元素高度缺失后，其他元素会自动上移
+            */
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        .outer{
+            border: 10px red solid;
+            
+            /* BFC(Block Formatting Context)块级格式化环境 
+                 - 成为一个独立的布局区域
+                 - 不会被浮动元素覆盖
+                 - 子元素父元素外边距不会重叠
+                 - 可以包含浮动的子元素
+                
+                通过特殊方式开启
+                 - 设置元素浮动
+                 - 元素设置为行内块元素
+                 - 元素overf设置为一个非visible的值（常用）
+            */
+            overflow: auto;
+        }
+        .inner{
+            width: 100px;
+            height: 100px;
+            background-color: royalblue;
+
+            float: left;
+            /* 高度塌陷
+                 - 当子元素浮动后，完全脱离文档流，将无法撑起父元素高度，导致父元素高度缺失
+                 - 父元素高度缺失后，其他元素会自动上移
+            */
+        }
+    </pre>
+    <hr>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+
+    <div>1111</div>
+</body>
+</html>

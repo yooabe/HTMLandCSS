@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../03_layout/file/css_重置.css">
+    <style>
+        .img-list{
+            width: 590px;
+            height: 470px;
+            margin: 100px auto;
+
+            position: relative;
+        }
+        .img-list li{
+            position: absolute;
+        }
+
+        .pointer{
+            position: absolute;
+            z-index: 999;
+            bottom: 15px;
+            left: 40px;
+        }
+        .pointer a{
+            float: left;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-left: 8px;
+            background-color: rgba(255, 255, 255, .5);
+
+            background-clip: content-box;
+            border: 1px solid transparent;
+        }
+
+        .pointer a:hover{
+            background-color: white;
+            border: 2px solid rgba(255, 255, 255, .3);
+        }
+        
+    </style>
+</head>
+<body>
+    <pre>
+        .img-list{
+            width: 590px;
+            height: 470px;
+            margin: 100px auto;
+
+            position: relative;
+        }
+        .img-list li{
+            position: absolute;
+        }
+
+        .pointer{
+            position: absolute;
+            z-index: 999;
+            bottom: 15px;
+            left: 40px;
+        }
+        .pointer a{
+            float: left;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-left: 8px;
+            background-color: rgba(255, 255, 255, .5);
+
+            background-clip: content-box;
+            border: 1px solid transparent;
+        }
+
+        .pointer a:hover{
+            background-color: white;
+            border: 2px solid rgba(255, 255, 255, .3);
+        }
+    </pre>
+    <hr>
+    <ul class="img-list">
+        <li><a href="#"><img src="file/05/1.jpg" alt=""></a></li>
+        <li><a href="#"><img src="file/05/2.jpg" alt=""></a></li>
+        <li><a href="#"><img src="file/05/3.jpg" alt=""></a></li>
+        <li><a href="#"><img src="file/05/4.jpg" alt=""></a></li>
+        <li><a href="#"><img src="file/05/5.jpg" alt=""></a></li>
+        <li><a href="#"><img src="file/05/6.jpg" alt=""></a></li>
+        <li><a href="#"><img src="file/05/7.jpg" alt=""></a></li>
+        <li><a href="#"><img src="file/05/8.jpg" alt=""></a></li>
+        <div class="pointer">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    </ul>
+</body>
+</html>

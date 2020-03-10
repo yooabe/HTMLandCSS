@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        p[title]{} 含有指定属性的元素
+        p[title=abc]{} 含有指定属性和属性值的元素
+        p[title^=abc]{} 以属性值为开头的元素
+        p[title$=abc]{} 以属性值为结尾的元素
+        p[title*=abc]{} 属性值含有其值的元素
+        */
+
+        p[title*=g]{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        /* 
+        p[title]{} 含有指定属性的元素
+        p[title=abc]{} 含有指定属性和属性值的元素
+        p[title^=abc]{} 以属性值为开头的元素
+        p[title$=abc]{} 以属性值为结尾的元素
+        p[title*=abc]{} 属性值含有其值的元素
+        */
+
+        p[title*=g]{
+            color: orange;
+        }
+    </pre>
+    <hr>
+    <p title="abc">1111</p>
+    <p title="abcd">2222</p>
+    <p title="abcdefg">3333</p>
+    <p title="gg">4444</p>
+</body>
+</html>

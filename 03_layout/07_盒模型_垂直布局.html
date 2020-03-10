@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            background-color: rosybrown;
+        }
+        .inner{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            margin-bottom: 100px;
+        }
+
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: teal;
+            overflow: hidden;
+            /* visble 默认
+               hidden 溢出裁剪
+               scroll 两个滚动条
+               auto 根据需要生成滚动条
+            */
+        }
+        .box2{
+            width: 50px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        .outer{
+            background-color: rosybrown;
+        }
+        .inner{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            margin-bottom: 100px;
+        }
+
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: teal;
+            overflow: hidden;
+            /* visble 默认
+               hidden 溢出裁剪
+               scroll 两个滚动条
+               auto 根据需要生成滚动条
+            */
+        }
+        .box2{
+            width: 50px;
+            height: 200px;
+            background-color: red;
+        }
+    </pre>
+    <hr>
+    <div class="outer">
+        <div class="inner"></div>
+        <div class="inner"></div>
+    </div>
+    <hr>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="file/css/all.css">
+    <style>
+        li{
+            list-style: none;
+        }
+        li::before{
+            content: '\f1b0';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: blue;
+            margin-right: 10px;
+        }
+        /* 通过伪元素设置图标字体
+              1. 使用伪元素before&after
+              2. content
+              3. 设置字体样式
+        */
+    </style>
+</head>
+<body>
+    <pre>
+        li{
+            list-style: none;
+        }
+        li::before{
+            content: '\f1b0';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: blue;
+            margin-right: 10px;
+        }
+        /* 通过伪元素设置图标字体
+              1. 使用伪元素before&after
+              2. content
+              3. 设置字体样式
+        */
+        
+        通过实体使用图标字体 &#x 
+    </pre>
+    <hr>
+    <i class="fas fa-cat"></i>
+
+    <ul>
+        <li>111</li>
+        <li>222</li>
+        <li>333</li>
+        <li>444</li>
+    </ul>
+    
+    <span class="fas">&#xf0f3;</span>
+    <!-- 通过实体使用图标字体 &#x -->
+</body>
+</html>

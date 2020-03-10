@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: cadetblue;
+            border: 10px orange solid;
+
+            padding:10px 20px 30px 40px;
+        }
+        .inner{
+            width: 100%;
+            height: 100%;
+            background-color: yellow;
+        }
+        /*  
+            1.内边距设置影响盒子大小
+            2.背景颜色会延伸到内边距上
+            3.当值少于四个的时候，有对称取对称，没有对称取逆时针
+        */
+    </style>
+</head>
+<body>
+    <pre>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: cadetblue;
+            border: 10px orange solid;
+
+            padding:10px 20px 30px 40px;
+        }
+        .inner{
+            width: 100%;
+            height: 100%;
+            background-color: yellow;
+        }
+        /*  
+            1.内边距设置影响盒子大小
+            2.背景颜色会延伸到内边距上
+            3.当值少于四个的时候，有对称取对称，没有对称取逆时针
+        */
+    </pre>
+    <hr>
+    <div class="box1">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>
