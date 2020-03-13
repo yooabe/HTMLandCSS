@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            /* 线性渐变
+               - 度数：xxxdeg
+               - 方向：to xxx
+               - 圈：  turn
+             */
+            background-image: linear-gradient(to right, red, yellow, orange);
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(to right, red 50px, yellow, orange);
+            background-image: repeating-linear-gradient()
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-image: repeating-linear-gradient(red 50px, yellow 100px)
+        }
+    </style>
+</head>
+<pre>
+    .box1{
+        width: 200px;
+        height: 200px;
+        /* 线性渐变
+           - 度数：xxxdeg
+           - 方向：to xxx
+           - 圈：  turn
+         */
+        background-image: linear-gradient(to right ,red,yellow,orange);
+    }
+    .box2{
+        width: 200px;
+        height: 200px;
+        background-image: linear-gradient(to right , red 50px,yellow,orange);
+        background-image: repeating-linear-gradient()
+    }
+    .box3{
+        width: 200px;
+        height: 200px;
+        background-image: repeating-linear-gradient( red 50px,yellow 100px)
+    }
+</pre>
+<hr>
+<body>
+    <div class="box1"></div><br>
+    <div class="box2"></div><br>
+    <div class="box3"></div>
+</body>
+
+</html>
