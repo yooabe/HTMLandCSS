@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 300px;
+            height: 300px;
+            background-color: olive;
+            background-image: url("../exercise/file/02/1.png");
+            background-repeat: no-repeat;
+            border: red 10px double;
+            padding: 10px;
+
+            background-origin: content-box;
+            /* 
+                背景图片偏移量原点
+                padding-box 默认值 
+                border-box
+                content-box
+             */
+
+            background-clip: content-box;
+            /* 
+                border-box 默认值，背景会出现在边框下
+                padding-box 不会出现在边框，出现在内容区和内边距
+                content-box 出现在内容区
+             */
+        }
+        .box2{
+            width: 300px;
+            height: 300px;
+            background-color: olive;
+            /* background-image: url("../exercise/file/01/1.jpg"); */
+            background-repeat: no-repeat;
+            padding: 10px;
+            overflow: auto;
+
+            background-size: 100%;
+            /* 设置图片大小
+                 - cover 比例不变，铺满
+                 - contain 完整显示
+             */
+        }
+        .box3{
+            width: 200px;
+            height: 1000px;
+            background-image: url("../exercise/file/02/1.png");
+            background-repeat: repeat;
+            /* background-color: orange; */
+
+            background-attachment: fixed;
+            /* 背景图片是否跟随元素移动
+                 - scroll 默认值 跟随
+                 - fixed 固定
+             */
+
+             /* 可以简写，个别有顺序 */
+        }
+    </style>
+</head>
+<body>
+    <pre>
+    </pre>
+    <hr>
+    <div class="box1"></div>
+
+    <div class="box2">
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

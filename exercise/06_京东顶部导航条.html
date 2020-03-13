@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../03_layout/file/css_重置.css">
+    <link rel="stylesheet" href="../06_font&background/file/css/all.css">
+    <style>
+        /* 还有一点点错误，过后再来重新敲一遍 */
+        body{
+            font-size: 12px;
+        }
+        .clearfix::before,.clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .top-bar-wrapper{
+            width: 100%;
+            background-color: rgb(225, 228, 227);
+            border-bottom: 1px #dddddd solid;
+            line-height: 30px;
+            height: 30px;
+        }
+        .top-bar{
+            width: 1190px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .top-bar a,.top-bar span,.top-bar i{
+            color: #999999;
+        }
+        .top-bar a:hover,.top-bar a.highlight{
+            color: #f10215;
+        }
+        .location{
+            float: left;
+        }
+        .location .fas{
+            color: #f10215;
+        }
+        .location .city-list{
+            display: none;
+            width: 320px;
+            height: 436px;
+            background-color: white;
+            border: 1px solid rgb(204,204,204);
+            position: absolute;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, .2);
+            top: 30px;
+            z-index: 999;
+        }
+        .location:hover .city-list{
+            display: block;
+        }
+        .current-city{
+            padding: 0 10px;
+            border: 1px solid rgb(225, 228, 227);
+            border-bottom: none;
+
+            position: relative;
+            z-index: 1000;
+        }
+        .location:hover,.current-city:hover{
+            background-color: white;
+            border: 1px solid rgb(204,204,204);
+            border-bottom: none;
+            padding-bottom: 1px;
+        }
+        .shortcut{
+            float: right;
+        }
+        .shortcut .line{
+            width: 1px;
+            height: 10px;
+            background-color: #999999;
+            margin: 10px 12px 0;
+        }
+        .shortcut i{
+            margin: 0 0 0 4px;
+        }
+        .shortcut li{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar-wrapper">
+        <div class="top-bar clearfix">
+            <div class="location">
+                <div class="current-city">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="#">北京</a>
+                </div>
+                <div class="city-list">
+
+                </div>
+            </div>
+            <ul class="shortcut">
+                <li>
+                    <a href="#">你好，请登录</a>
+                    <a href="#" class="highlight">免费注册</a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <a href="#">我的订单</a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <a href="#">我的京东</a>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <a href="#">京东会员</a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <a href="#" class="highlight">企业采购</a>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <span>客户服务</span>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <span>网站导航</span>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <span>手机京东</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
