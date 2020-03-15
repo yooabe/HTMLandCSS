@@ -1,0 +1,108 @@
+/* 顶部导航条容器 */
+.top-bar-wrapper{
+    /* 设置宽度全屏 */
+    width: 100%;
+    /* 设置高度和行高 */
+    line-height: 40px;
+    height: 40px;
+    /* 设置背景颜色 */
+    background-color: #333333;
+}
+/* 设置超链颜色 */
+.topbar a{
+    display: block;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+/* 设置超链移入效果 */
+.topbar a:hover{
+    color: white;
+}
+/* 设置分割线 */
+.topbar .line{
+    font-size: 12px;
+    color: #424242;
+    margin: 0 8px;
+}
+/* 左侧导航栏 */
+.service,.topbar li{
+    float: left;
+}
+.app{
+    position: relative;
+}
+/* 设置app小三角 */
+/* .app-wrapper:hover>.app::after{ */
+.app:after{
+    content: '';
+    display: none;
+    width: 0px;
+    height: 0px;
+    /* 设置绝对定位 */
+    position: absolute;
+    /* 设置四个方向边框 */
+    border: 8px solid transparent;
+    /* 去除上边框 */
+    border-top: none;
+    /* 单独设置下边框颜色 */
+    border-bottom-color: #fff;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+/* .app-wrapper:hover>.app .qrcode{
+    display: block;
+} */
+.app:hover .qrcode,
+.app:hover::after{
+    display: block;
+    height: 148px;
+}
+/* 设置下载app下拉 */
+.app .qrcode{
+    /* display: none; */
+    position: absolute;
+    left: -40px;
+    width: 124px;
+    /* height: 148px; */
+    height: 0;
+    overflow: hidden;
+    line-height: 1px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+
+    /* transiton 过渡效果 */
+    transition: height .4s;
+}
+/* 设置二维码图片 */
+.qrcode img{
+    width: 90px;
+    margin: 17px;
+}
+/* 设置二维码中的文字 */
+.app .qrcode span{
+    color: black;
+    font-size: 13px;
+}
+/* 右侧导航栏 */
+.short-cart,.user-info{
+    float: right;
+}
+/* 设置购物车样式 */
+.short-cart{
+    margin-left: 25px;
+}
+.short-cart a{
+    width: 120px;
+    background-color: #424242;
+    text-align: center;
+}
+.short-cart i{
+    margin-right: 3px;
+}
+.short-cart:hover a{
+    background-color: white;
+    color: #ff6700;
+}
