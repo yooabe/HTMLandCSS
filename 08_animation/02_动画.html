@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 800px;
+            height: 800px;
+            background-color: grey;
+            overflow: hidden;
+        }
+        .box1 div{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 100px;
+            margin-left: 0;
+        }
+        .box2{
+            background-color: olive;
+            /* 设置box2动画 */
+            /* animation-name：要对当前元素生效的关键帧的名字 */
+            animation-name: test;
+            /* animation-durantion：动画执行时间 */
+            animation-duration: 4s;
+            /* animation-delay：延迟 */
+            animation-delay: 2s;
+            /* animation-timing-function */
+            /* annimation-iteration-count：动画执行次数，infinite无线 */
+            /* animation-direction: 指定动画运行方向
+                  - normal 默认值 from-to
+                  - reverse to-from
+                  - alternate from-to 重复执行时方向执行
+                  - alternate-reverse to-from 重复执行时方向执行
+             */
+             /* animation-play-state：paused动画执行状态 */
+             /* animation-fill-mode：动画填充模式
+                  - none 默认值 执行完毕元素回到原来位置
+                  - forwards 停止在结束位置
+                  - backwards 动画延时等待时，元素就会处于开始位置
+                  - both 结合两者
+             */
+             animation-fill-mode: none;
+
+             /* animation:test 2s 2 1s alternate */
+            
+        }
+        /* 
+            动画和过渡类似，过渡是需要再某个属性发生变化时才触发，动画可以自动
+            设置动画效果必须设置关键帧
+         */
+         @keyframes test{
+             /* from表示动画的开始位置，也可以使用0% */
+             from{
+                 margin-left: 0;
+             }
+             /* to动画的结束位置，也可以使用100% */
+             to{
+                 margin-left: 700px;
+             }
+         }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
