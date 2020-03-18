@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>\
+
+    <style>
+        html{
+            /* 设置当前网页视距为800px，人眼距离网页的距离 */
+            perspective: 800px;
+        }
+        body{
+            border: 1px red solid;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: rosybrown;
+            margin: 200px auto;
+
+             transition: 2s;
+
+        }
+        body:hover .box1{
+            /* 通过旋转可以使元素沿着x y或z轴选择 */
+            transform: rotateY(70deg) translateZ(100px);
+            /* 设置背面是否显示 */
+            backface-visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

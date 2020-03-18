@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            margin: 100px auto;
+
+            transition: 2s;
+            transform-origin: 0 0;
+        }
+        .box1:hover{
+            /* 进行缩放的函数
+                 - scaleX()
+                 - scaleY()
+                 - scale()
+             */
+            transform: scale(2);
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            border: 1px red solid;
+            overflow: hidden;
+        }
+        img{
+            transition: 2s;
+        }
+        img:hover{
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+
+    <div class="box2">
+        <img src="../exercise/file/05/1.jpg" alt="">
+    </div>
+</body>
+</html>

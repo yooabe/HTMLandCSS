@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>\
+
+    <style>
+        html{
+            /* 设置当前网页视距为800px，人眼距离网页的距离 */
+            perspective: 800px;
+        }
+        body{
+            border: 1px red solid;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: rosybrown;
+            margin: 200px auto;
+
+            /* 
+                z轴平移，调整元素在z轴位置，距高越大，元素离人越近
+                z轴平移属于立体效果，近大远小，默认情况下网页不支持透视，如需看见效果
+            则必须设置网页视距
+             */
+             transition: 2s;
+
+        }
+        body:hover .box1{
+            transform: translateZ(100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(226, 226, 226);
+        }
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin: 0 auto;
+            margin-top: 200px;
+
+        /*  
+            变形通过css来改变元素形状或位置
+               - 变形不会影响到页面布局
+                  - 平移
+                    transformX() 沿着x轴平移
+                    transformY() 沿着y轴平移
+                    transformZ() 沿着z轴平移
+                       平移元素 百分比相对自身计算
+         */
+            transform: translateX(50%);
+        }
+
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 0 auto;
+        }
+        .box3{
+            /* 居中方式：
+            top,left,right,bottom:0 margin:auto 适用确定元素大小 */
+            position: absolute;
+            background-color: royalblue;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            top: 50%;
+        }
+
+        .box4,.box5{
+            width: 220px;
+            height: 300px;
+            background-color: rgb(255, 255, 255);
+            float: left;
+            margin: 0 10px;
+
+            transition: all .3s;
+        }
+        .box4:hover,.box5:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3">aaa</div>
+
+    <div class="box4"></div>
+    <div class="box5"></div>
+</body>
+
+</html>
