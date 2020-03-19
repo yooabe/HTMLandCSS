@@ -1,0 +1,42 @@
+.box1{
+    background-color: green;
+     .box2{
+         background-color: blue;
+         .box3{
+             background-color: red;
+         }
+     }
+}
+// less单行注释
+/* css注释 */
+
+//变量，在变量中可以储存一个任意值
+//并且我们可以在需要时，任意的修改变变量中的值
+//变量的语法：@变量名
+@a:100px;
+@b:red;
+@c:box6;
+.box5{
+    //使用变量时，如果如果直接适用则以 @变量名 的形式使用即可
+    width: @a;
+    color:@b
+}
+//作为类名，或者一部分值时候时必须以 @{变量名} 的形式适用
+.@{c}{
+    width: @a;
+    background-image: url("@{c}/1.png");
+}
+
+//变量重名时，会优先使用比较近的变量，并且可以在声明变量前使用变量
+@d:200px;
+@d:300px;
+div{
+    width: @d;
+}
+
+//变量引用
+div{
+    width: 300px;
+    height: $width;
+}
+

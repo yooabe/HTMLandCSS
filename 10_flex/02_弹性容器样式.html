@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul{
+            width: 800px;
+            border: 10px red solid;
+
+            display: flex;
+
+            /* 
+               flex-wrap
+               设置弹性元素是否在弹性容器中自动换行
+                  nowrap 默认值，元素不会自动换行
+                  wrap 元素沿着辅轴换行
+                  wrap-reverse 辅轴方向自动换行
+            */
+            /* flex-flow: row wrap; 简写 */
+
+            /* 
+               juestify:content
+               如何分配主轴上的空白空间
+                  flex-start 元素沿主轴起边排列
+                  flex-end 元素沿主轴终边排列
+                  center 元素居中排列
+                  space-around 空白分布到元素两侧
+                  spance-between 空白均匀分布到到元素间
+                  space-evenly 空白分布到元素单侧
+             */
+
+            justify-content: center;
+
+
+
+
+        }
+        li{
+            width: 200px;
+            height: 100px;
+            background-color: olive;
+            font-size: 50px;
+            text-align: center;
+            line-height: 100px;
+            
+            flex-shrink: 0;
+        }
+        li:nth-child(2){
+            background-color: pink;
+        }
+        li:nth-child(3){
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+     <ul>
+         <li>1</li>
+         <li>2</li>
+         <li>3</li>
+     </ul>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul{
+            width: 900px;
+            border: 10px red solid;
+
+            display: flex;
+
+        }
+        li{
+            width: 200px;
+            height: 100px;
+            background-color: olive;
+            font-size: 50px;
+            text-align: center;
+            line-height: 100px;
+
+            /* 弹性增长系数 */
+            /* flex-grow: 1; */
+
+            /* 弹性缩减系数
+                - 缩减大小根据缩减系数和元素大小计算
+            */
+            /* flex-shrink: 1; */
+
+            /* 元素主轴上基础长度
+                - 如果主轴是横向，则是元素宽度
+                - 如果主轴是纵向，则是元素高度
+                - 默认值 auto 参考自身高度或宽度
+            */
+            /* flex-basis: 100px; */
+
+            /* flex简写 增长 缩减 基础
+                  - initial: 0 1 auto
+                  - auto: 1 1 auto
+                  - none: 0 0 auto
+            */
+            flex: 1 1 auto;
+        }
+        li:nth-child(1){
+            /* order 决定弹性元素的排列顺序 */
+            order: 3;
+        }
+        li:nth-child(2){
+            background-color: pink;
+            /* flex-grow: 2; */
+            order: 2;
+
+        }
+        li:nth-child(3){
+            background-color: yellow;
+            /* flex-grow: 3; */
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+
+     <ul>
+         <li>1</li>
+         <li>2</li>
+         <li>3</li>
+     </ul>
+</body>
+</html>

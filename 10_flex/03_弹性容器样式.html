@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul{
+            width: 600px;
+            height: 800px;
+            border: 10px red solid;
+
+            display: flex;
+
+            /* 
+               flex-wrap
+               设置弹性元素是否在弹性容器中自动换行
+                  nowrap 默认值，元素不会自动换行
+                  wrap 元素沿着辅轴换行
+                  wrap-reverse 辅轴方向自动换行
+            */
+            flex-flow: row wrap;
+
+            /* 
+               justify-content
+               如何分配主轴上的空白空间
+                  flex-start 元素沿主轴起边排列
+                  flex-end 元素沿主轴终边排列
+                  center 元素居中排列
+                  space-around 空白分布到元素两侧
+                  spance-between 空白均匀分布到到元素间
+                  space-evenly 空白分布到元素单侧
+             */
+
+            /* 
+               align-items
+               元素在辅轴上如何对齐
+                  stretch 将原始的长度设置为相同值
+                  flex-start 元素不会拉伸，沿着辅轴起边对齐
+                  flex-end 元素不会拉伸，沿着辅轴终边对齐
+                  center 居中对齐
+                  baseline 基线对齐
+             */
+             /* justify-content: center; */
+             align-items: flex-start;
+
+             /* align-content */
+
+        }
+        li{
+            width: 200px;
+            background-color: olive;
+            font-size: 50px;
+            text-align: center;
+            line-height: 100px;
+            
+            flex-shrink: 0;
+        }
+        li:nth-child(1){
+            align-self: flex-end;
+            /* 用来覆盖当前弹性元素上的align-items */
+        }
+        li:nth-child(2){
+            background-color: pink;
+        }
+        li:nth-child(3){
+            background-color: yellow;
+        }
+        li:nth-child(4){
+            background-color: rgb(158, 51, 69);
+        }
+        li:nth-child(5){
+            background-color: rgb(174, 0, 255);
+        }
+    </style>
+</head>
+<body>
+
+     <ul>
+         <li>1</li>
+         <li>2
+             <div>2</div>
+         </li>
+         <li>3
+             <div>3</div>
+             <div>3</div>
+         </li>
+         <li>1</li>
+         <li>2
+             <div>2</div>
+         </li>
+     </ul>
+</body>
+</html>
