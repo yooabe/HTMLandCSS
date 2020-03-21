@@ -1,0 +1,115 @@
+a{
+    color: white;
+
+    &:hover{
+        color: rgb(196, 196, 196);
+    }
+}
+
+// 导航条外部容器
+.top-bar{
+    height: 48px;
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+}
+
+//左侧导航图标
+.left-menu{
+
+    //显示隐藏菜单
+    &:hover{
+        .nav{
+            display: block;
+        }
+    }
+
+    //设置菜单
+    .nav{
+        display: none;
+        position: absolute;
+        top: 48px;
+        padding-top: 40px;
+
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #000;
+
+        li{
+            width: 80%;
+            margin: 0 auto;
+            border-bottom: 1px solid #303030;
+
+            a{
+                display: block;
+                line-height: 44px;
+                font-size: 14px;
+            }
+
+            &:last-child a{
+                display: inline-block;
+                margin-right: 6px;
+            }
+            
+            span{
+                color: #fff;
+                font-size: 14px;
+
+            }
+        
+        }
+    }
+
+
+    //图标
+    .menu-icon{
+        width: 18px;
+        height: 48px;
+        position: relative;
+
+        //导航线
+        li{
+            width: 18px;
+            height: 1px;
+            background-color: #fff;
+            position: absolute;
+
+            //修改变形原点
+            transform-origin: left center;
+
+            //动画
+            transition: .4s;
+        }
+
+        li:nth-child(1){
+            top: 18px;
+        }
+        li:nth-child(2){
+            top: 24px;
+        }
+        li:nth-child(3){
+            top: 30px;
+        }
+
+        //鼠标移入效果,正常采用js
+        &:hover{
+
+            li:nth-child(1){
+                //向下旋转
+                transform: rotateZ(40deg);
+            }
+            li:nth-child(2){
+                //隐藏
+                opacity: 0;
+            }
+            li:nth-child(3){
+                //向上旋转
+                transform: rotateZ(-40deg);
+            }
+
+        }
+    }
+}
