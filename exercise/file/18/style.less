@@ -7,7 +7,13 @@ a{
 }
 
 // 导航条外部容器
+.top-bar-wrapper{
+    width: 100%;
+    background-color: #000;
+}
 .top-bar{
+    max-width: 1200px;
+    margin: 0 auto;
     height: 48px;
     padding: 0 14px;
     display: flex;
@@ -20,7 +26,7 @@ a{
 .left-menu{
 
     //显示隐藏菜单
-    &:hover{
+    &:active{
         .nav{
             display: block;
         }
@@ -95,7 +101,7 @@ a{
         }
 
         //鼠标移入效果,正常采用js
-        &:hover{
+        &:active{
 
             li:nth-child(1){
                 //向下旋转
@@ -110,6 +116,58 @@ a{
                 transform: rotateZ(-40deg);
             }
 
+        }
+    }
+}
+
+//设置logo
+.logo{
+    a{
+        text-indent: -9999px;
+        display: block;
+        width: 122px;
+        height: 32px;
+        background-image: url('./1.png');
+        background-size: 400px 400px;
+    }
+}
+
+//设置媒体查询
+@media only screen{
+    //断点768
+    @media (min-width: 768px){
+        .left-menu{
+            order: 2;
+            flex: auto;
+            //显示菜单
+            .nav{
+                display: flex;
+                position: static;
+                padding: 0;
+                justify-content: space-around;
+                li{
+                    width: auto;
+                    border-bottom: none;
+                    margin: 0;
+                    a{
+                        line-height: 48px;
+                    }
+                    span{
+                        display: none;
+                    }
+                }
+            }
+
+            //隐藏菜单图标
+            .menu-icon{
+                display: none;
+            }
+        }
+        .logo{
+            order: 1;
+        }
+        .user-info{
+            order: 3;
         }
     }
 }
