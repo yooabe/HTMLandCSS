@@ -1,2 +1,2 @@
 # HTMLandCSS
-这个仓库专门用于学习html&amp
+这个仓库专门用于学习html&css
